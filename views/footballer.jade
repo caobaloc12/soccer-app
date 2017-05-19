@@ -1,0 +1,28 @@
+extends layout
+
+block content
+
+      table.table.table-hover
+        thead
+          tr
+            th #
+            th Name
+            th Date of birth
+            th Place of birth
+            th Height
+            th Country
+            th Position
+            th Team
+            th Number
+        tbody
+          each item, index in data
+            tr
+              td= (index + 1)
+              td= item.name
+              td= item.dob
+              td= item.pob
+              td= item.height
+              td= item.country
+              td= item.position
+              td= item.team
+              td= item.number

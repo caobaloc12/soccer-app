@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+
+  body
+    nav.navbar.navbar-default(role="navigation")
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(data-toggle="collapse" data-target="#navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="/") Home
+        .collapse.navbar-collapse#navbar
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href="/team") Team
+            li
+              a(href="/footballer") Footballer
+  .container
+    block content
