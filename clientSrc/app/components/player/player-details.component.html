@@ -1,0 +1,41 @@
+<div *ngIf="player">
+  <button type="button" (click)="closeDetails()" class="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <img src="{{player.img}}" alt="{{player.name}}" class="player-img">
+  <table class="table">
+    <tr>
+      <td>Name</td>
+      <td>{{player.name}}</td>
+    </tr>
+    <tr>
+      <td>Date of Birth</td>
+      <td>{{player.dob}}</td>
+    </tr>
+    <tr>
+      <td>Place of Birth</td>
+      <td>{{player.pob}}</td>
+    </tr>
+    <tr>
+      <td>Height</td>
+      <td>{{player.height}}</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>{{player.country}}</td>
+    </tr>
+    <tr>
+      <td>Position</td>
+      <td>{{player.position}}</td>
+    </tr>
+    <tr>
+      <td>Current Team</td>
+      <td>{{player.team}}</td>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>{{player.number}}</td>
+    </tr>
+  </table>
+
+</div>

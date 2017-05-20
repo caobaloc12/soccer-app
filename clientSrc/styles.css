@@ -1,0 +1,14 @@
+body{
+  padding-bottom: 100px;
+}
+
+#player-wrap{
+  width: 100%;
+  float: left;
+}
+#player-details{
+   display: none;
+   background: #efefef;
+   border: 1px solid #ccc;
+   padding: 0 10px 10px;
+}

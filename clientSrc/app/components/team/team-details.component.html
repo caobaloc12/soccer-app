@@ -1,0 +1,35 @@
+<div *ngIf="team" class="selected-team">
+  <br>
+  <h2>{{team.name}}</h2>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td rowspan="5">
+          <img src="{{team.logo}}" alt="{{team.name}}">
+        </td>
+        <td>Name</td>
+        <td>{{team.name}}</td>
+      </tr>
+      <tr>
+        <td>Stadium</td>
+        <td>{{team.stadium}}</td>
+      </tr>
+      <tr>
+        <td>Founded</td>
+        <td>{{team.founded}}</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>{{team.location}}</td>
+      </tr>
+      <tr>
+        <td>Manager</td>
+        <td>{{team.manager}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <player-list [listOfTeam]="team" id="player-wrap"></player-list>
+
+</div>

@@ -1,0 +1,16 @@
+<h4>Player List</h4>
+
+<div id="player-list">
+  <table *ngIf="players" class="table">
+    <tr *ngFor="let player of players">
+      <td>
+        <div (click)="onSelect(player)">
+          <span>{{player.name}}</span>
+          <img src="{{player.img}}" alt="{{player.name}}">
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<player-details [player]="selectedPlayer" id="player-details"></player-details>

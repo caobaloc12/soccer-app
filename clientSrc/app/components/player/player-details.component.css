@@ -1,0 +1,9 @@
+
+.player-img{
+  display: block;
+  margin: 10px auto;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: top;
+}

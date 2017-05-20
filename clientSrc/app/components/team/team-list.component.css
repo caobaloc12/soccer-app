@@ -1,0 +1,25 @@
+.team-list{
+  list-style-type: none;
+}
+.team-list .team a{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+.team-list .team a:hover,
+.team-list .team a:focus{
+  background: #efefef;
+}
+.team img{
+  width: auto;
+  height: 25px;
+}
