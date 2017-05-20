@@ -9,9 +9,9 @@ const db = mongojs("mongodb://" + config.dbuser + ":" + config.dbpassword + "@ds
 router.get("/", (req, res, next) => {
   db.team.find((err, data) => {
     if (err) {
-      res.render("error", {title: "Error"})
+      res.send(err)
     }
-    res.render("team", {title: "Team list", data: data})
+    res.send(data)
   })
 })
 
